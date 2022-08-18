@@ -1,0 +1,78 @@
+.login_heading {
+          display: flex;
+          flex-direction: column;
+          color: rgba(246, 247, 248, 255);
+          align-items: center;
+          /* justify-content: center; */
+          /* border: 2px solid black; */
+        
+          margin-top:50px;
+          padding: none;
+        }
+        
+        .inner_login {
+          display: flex;
+          flex-flow: column;
+          padding: 0px;
+          background-color: rgba(8, 41, 94, 255);
+          align-items: center;
+          border-radius: 10px;
+        }
+        
+        button {
+          background-color: yellow;
+          box-sizing: content-box;
+          border: none;
+          font-size: x-large;
+          font-weight: bold;
+        }
+        
+        .input_v {
+          box-sizing: border-box;
+          min-height: 50px;
+          margin: 22px;
+          width: 510px;
+          border-radius: 5px;
+          font-size: xx-large;
+        }
+        
+        .log_bottom {
+          margin-top: 5px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        input {
+          background-color: rgba(21, 57, 115, 255);
+          border: 0;
+          color: white;
+        }
+        .invalid_alert {
+          color: red;
+        }
+        a{
+          color: rgb(61, 61, 52);
+          background-color: yellow;
+        }
+        
+        .logo_img{
+        display: flex;
+        }
+        
+        .input_inner{
+          display: flex;
+          margin-bottom: 20px;
+          /* border:1px solid wheat; */
+          border-radius: 5px;
+        
+          
+          /* margin: -50; */
+          }
+          .user_icon{
+            height: 45px;
+            display: flex;
+            align-items: center;
+            margin-left: -5px;
+            margin-top: 25px;
+          }

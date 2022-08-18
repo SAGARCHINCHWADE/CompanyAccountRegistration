@@ -55,3 +55,24 @@ a{
   color: rgb(61, 61, 52);
   background-color: yellow;
 }
+
+.logo_img{
+display: flex;
+}
+
+.input_inner{
+  display: flex;
+  margin-bottom: 20px;
+  /* border:1px solid wheat; */
+  border-radius: 5px;
+
+  
+  /* margin: -50; */
+  }
+  .user_icon{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+    margin-top: 25px;
+  }

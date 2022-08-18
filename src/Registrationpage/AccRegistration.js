@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../Login_page/login.css";
+import "./Ragister.css";
 
 const AccRegistration = () => {
   const navigate = useNavigate();
@@ -31,7 +31,6 @@ const AccRegistration = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-  
   };
 
   let submitRegister = async () => {

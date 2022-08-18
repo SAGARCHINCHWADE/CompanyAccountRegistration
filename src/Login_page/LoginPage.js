@@ -24,8 +24,6 @@ const LoginPage = () => {
     setFormErrors(validate(formValues));
     setIsSubmit(true);
     // e.value=[]
- 
-    
   };
 
   let submitRegister = async () => {
@@ -49,7 +47,6 @@ const LoginPage = () => {
     );
     let responseData = await response.json();
     console.log("sucessfully Register", responseData);
- 
   };
   // after validate data post
 
@@ -57,7 +54,6 @@ const LoginPage = () => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log("candition ok");
       submitRegister();
-
     }
   }, [formErrors]);
 
@@ -89,23 +85,34 @@ const LoginPage = () => {
       </div>
       <div className="log_bottom">
         <div className="inner_login">
-          <input
-            className="input_v"
-            type="email"
-            placeholder="User name or Email"
-            name="login_id"
-            value={formValues.login_id}
-            onChange={handleChange}
-          ></input>
+          <div className="input_inner">
+          <div className="user_icon">
+            <img src="log.png"></img>
+            </div>
+            <input
+              className="input_v"
+              type="email"
+              placeholder="User name or Email"
+              name="login_id"
+              value={formValues.login_id}
+              onChange={handleChange}
+            ></input>
+          </div>
           <span className="invalid_alert">{formErrors.login_id}</span>
-          <input
-            className="input_v"
-            type="Password"
-            placeholder="Password"
-            name="password"
-            value={formValues.password}
-            onChange={handleChange}
-          ></input>
+          <div className="input_inner">
+            <div className="user_icon">
+              <img src="lock.png"></img>
+            </div>
+
+            <input
+              className="input_v"
+              type="Password"
+              placeholder="Password"
+              name="password"
+              value={formValues.password}
+              onChange={handleChange}
+            ></input>
+          </div>
           <span className="invalid_alert">{formErrors.password}</span>
           <button className="input_v">Sign in</button>
         </div>
