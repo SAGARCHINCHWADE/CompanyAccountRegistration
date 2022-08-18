@@ -1,8 +1,8 @@
 import "./App.css";
+import AccRegistration from "./Registrationpage/AccRegistration";
 import LoginPage from "./Login_page/LoginPage";
-import AccRegistration from "./AccRegistration";
+import AccountDashboard from "./Registrationpage/AccountDashboard";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./Home/Home";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AccRegistration />} />
         <Route path="/LoginPage" element={<LoginPage />} />
-        {/* <Route path="/AccRegistration" element={<AccRegistration />} /> */}
+        <Route path="/AccountDashboard" element={<AccountDashboard />} />
       </Routes>
     </div>
   );

@@ -6,7 +6,7 @@
   /* justify-content: center; */
   /* border: 2px solid black; */
 
-  margin-top: 150px;
+  margin-top: 50px;
   padding: none;
 }
 
@@ -16,8 +16,7 @@
   padding: 50px;
   background-color: rgba(8, 41, 94, 255);
   align-items: center;
-  border-radius: 10px
-
+  border-radius: 10px;
 }
 
 button {
@@ -30,7 +29,7 @@ button {
 
 .input_v {
   box-sizing: border-box;
-  height: 80px;
+  min-height: 50px;
   margin: 22px;
   width: 510px;
   border-radius: 5px;
@@ -47,4 +46,8 @@ button {
 input {
   background-color: rgba(21, 57, 115, 255);
   border: 0;
+  color: white;
+}
+.invalid_alert {
+  color: red;
 }
