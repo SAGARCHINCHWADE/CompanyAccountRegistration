@@ -1,7 +1,7 @@
 // import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import './Register.css'
+import "../Login_page/commen.css";
 
 
 function AccountDashboard() {
@@ -9,7 +9,7 @@ function AccountDashboard() {
   let registrationResult = location.state.registrationResult;
   return (
     <div className="account-dashboard">
-      <h1>Get API Call </h1>
+      <h1>Dashbord</h1>
       <table border="1">
         <tbody>
           <tr>

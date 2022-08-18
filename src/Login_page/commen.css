@@ -3,10 +3,7 @@
   flex-direction: column;
   color: rgba(246, 247, 248, 255);
   align-items: center;
-
-  /* justify-content: center; */
-  /* border: 2px solid black; */
-
+  font-weight: 200;
   margin-top: 0px;
   padding: none;
 }
@@ -14,7 +11,7 @@
 .inner_login {
   display: flex;
   flex-flow: column;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: rgba(8, 41, 94, 255);
   align-items: center;
   border-radius: 10px;
@@ -25,12 +22,12 @@ button {
   box-sizing: content-box;
   border: none;
   font-size: medium;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 .input_v {
   box-sizing: border-box;
-  min-height:30px;
+  min-height: 30px;
   margin: 10px;
   width: 300px;
   border-radius: 5px;
@@ -38,7 +35,7 @@ button {
 }
 
 .log_bottom {
-  margin-top: 0px;
+  margin-top: 10px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -48,32 +45,35 @@ input {
   background-color: rgba(21, 57, 115, 255);
   border: 0;
   color: white;
+  padding: 0px 10px;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
 }
 .invalid_alert {
   color: red;
 }
-a{
+a {
   color: rgb(61, 61, 52);
   background-color: yellow;
 }
 
-.logo_img{
-display: flex;
-}
-
-.input_inner{
+.input_inner {
   display: flex;
   margin-bottom: 20px;
   /* border:1px solid wheat; */
   border-radius: 5px;
-
+  background-color: rgba(21, 57, 115, 255);
   
-  /* margin: -50; */
-  }
-  .user_icon{
-    height: 45px;
-    display: flex;
-    align-items: center;
-    margin-left: -5px;
-    margin-top: 25px;
-  }
+    border: 0px solid;
+  
+}
+.user_icon {
+  height: 40px;
+  display: flex;
+  align-items: unset;
+  width: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+ 
+}

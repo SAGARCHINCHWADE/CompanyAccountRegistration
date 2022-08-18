@@ -1,5 +1,5 @@
 import React from "react";
-import "./login.css";
+import "../Login_page/commen.css";
 import { useState, useEffect } from "react";
 
 const LoginPage = () => {
@@ -7,23 +7,23 @@ const LoginPage = () => {
     login_id: "",
     password: "",
   };
-
+  // chinging state of form values
   const [formValues, SetFormValues] = useState(InitialValue);
-
+  // chinging state of form values
   const [formErrors, setFormErrors] = useState({});
-
+  // submit state false to true
   const [isSubmit, setIsSubmit] = useState(false);
 
+  // target the value from form
   const handleChange = (e) => {
     const { name, value } = e.target;
     SetFormValues({ ...formValues, [name]: value });
   };
-
+  // after click submit before post data validate it
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-    // e.value=[]
   };
 
   let submitRegister = async () => {
@@ -32,8 +32,6 @@ const LoginPage = () => {
 
       password: formValues.password,
     };
-
-    //   // post data
     const response = await fetch(
       "https://react-tasks-nodejs-api.herokuapp.com/user/login",
       {
@@ -47,13 +45,14 @@ const LoginPage = () => {
     );
     let responseData = await response.json();
     console.log("sucessfully Register", responseData);
+    await alert('Successfully submit')
   };
-  // after validate data post
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log("candition ok");
       submitRegister();
+      
     }
   }, [formErrors]);
 
@@ -86,8 +85,8 @@ const LoginPage = () => {
       <div className="log_bottom">
         <div className="inner_login">
           <div className="input_inner">
-          <div className="user_icon">
-            <img src="log.png"></img>
+            <div className="user_icon">
+              <img src="log.png"></img>
             </div>
             <input
               className="input_v"
@@ -101,7 +100,7 @@ const LoginPage = () => {
           <span className="invalid_alert">{formErrors.login_id}</span>
           <div className="input_inner">
             <div className="user_icon">
-              <img src="lock.png"></img>
+              <img src="/LOCK.png"></img>
             </div>
 
             <input

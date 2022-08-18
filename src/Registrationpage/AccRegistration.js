@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Register.css";
+import "../Login_page/commen.css";
 
 const AccRegistration = () => {
   const navigate = useNavigate();
