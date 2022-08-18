@@ -13,7 +13,7 @@
         .inner_login {
           display: flex;
           flex-flow: column;
-          padding: 0px;
+          padding: px;
           background-color: rgba(8, 41, 94, 255);
           align-items: center;
           border-radius: 10px;
@@ -29,15 +29,15 @@
         
         .input_v {
           box-sizing: border-box;
-          min-height: 50px;
+          min-height: 30px;
           margin: 22px;
-          width: 510px;
+          width: 0px;
           border-radius: 5px;
-          font-size: xx-large;
+          font-size: -large;
         }
         
         .log_bottom {
-          margin-top: 5px;
+          margin-top: 0px;
           align-items: center;
           display: flex;
           justify-content: center;

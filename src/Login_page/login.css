@@ -3,17 +3,18 @@
   flex-direction: column;
   color: rgba(246, 247, 248, 255);
   align-items: center;
+
   /* justify-content: center; */
   /* border: 2px solid black; */
 
-  margin-top: 50px;
+  margin-top: 0px;
   padding: none;
 }
 
 .inner_login {
   display: flex;
   flex-flow: column;
-  padding: 50px;
+  padding: 10px 20px;
   background-color: rgba(8, 41, 94, 255);
   align-items: center;
   border-radius: 10px;
@@ -23,21 +24,21 @@ button {
   background-color: yellow;
   box-sizing: content-box;
   border: none;
-  font-size: x-large;
+  font-size: medium;
   font-weight: bold;
 }
 
 .input_v {
   box-sizing: border-box;
-  min-height: 50px;
-  margin: 22px;
-  width: 510px;
+  min-height:30px;
+  margin: 10px;
+  width: 300px;
   border-radius: 5px;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .log_bottom {
-  margin-top: 50px;
+  margin-top: 0px;
   align-items: center;
   display: flex;
   justify-content: center;

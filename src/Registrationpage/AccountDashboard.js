@@ -1,8 +1,7 @@
 // import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import './Ragister.css'
-
+import './Register.css'
 
 
 function AccountDashboard() {
