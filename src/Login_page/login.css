@@ -51,3 +51,7 @@ input {
 .invalid_alert {
   color: red;
 }
+a{
+  color: rgb(61, 61, 52);
+  background-color: yellow;
+}

@@ -1,6 +1,7 @@
 // import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import "../Login_page/login.css";
 
 
 
@@ -30,8 +31,8 @@ function AccountDashboard() {
           </tr>
         </tbody>
       </table>
-      <Link to='/loginpage'>
-      <botton >GO TO LOGIN PAGE</botton>
+      <Link className="input_v" to='/loginpage'>
+      <botton className="input_v">CLICK TO LOGIN PAGE </botton>
       </Link>
     </div>
   );
